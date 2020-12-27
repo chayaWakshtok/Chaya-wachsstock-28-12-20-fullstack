@@ -1,0 +1,11 @@
+<div id="custom-search-input">
+    <div class="input-group col-md-12">
+        <input [formControl]="citySearch" type="text" class="form-control input-lg" placeholder="Search city" />
+        <span class="input-group-btn">
+            <button class="btn btn-info btn-lg" type="button" (click)="search()">
+                <i class="fas fa-search-location"></i>
+            </button>
+        </span>
+    </div>
+</div>
+<app-weater></app-weater>

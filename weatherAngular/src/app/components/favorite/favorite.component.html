@@ -1,0 +1,3 @@
+<div class="card m-5 p-3 " *ngFor="let favorite of favorites">
+    <app-weater-card (removeFavorite)="remove($event)" [city]="favorite"></app-weater-card>
+</div>

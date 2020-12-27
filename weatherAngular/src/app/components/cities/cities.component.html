@@ -1,0 +1,5 @@
+<div class="d-grid gap-2 col-6 mx-auto" *ngIf="cities&&cities.length">
+    <button class="btn" type="button"  *ngFor="let city of cities"
+    [ngClass]="{'btn-primary': keyChoose==city.key, 'btn-light': keyChoose!=city.key}" 
+    (click)="choose(city)">{{city.localizedName}}</button>
+</div>
