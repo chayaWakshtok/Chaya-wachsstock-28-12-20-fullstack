@@ -27,6 +27,7 @@ namespace WebApplication1
 
             var container = new UnityContainer();
             container.RegisterType<IWeatherService, WeatherService>();
+            container.RegisterType<IFavoriteService, FavoriteService>();
             config.DependencyResolver = new UnityResolver(container);
 
 

@@ -3,6 +3,7 @@ import { WeatherService } from 'src/app/shared/services/weather.service';
 import { FavoriteService } from 'src/app/shared/services/favorite.service';
 import { Weather } from 'src/app/shared/models/weather';
 import { City } from 'src/app/shared/models/city';
+import { Favorite } from 'src/app/shared/models/favorite';
 
 
 @Component({
@@ -12,17 +13,26 @@ import { City } from 'src/app/shared/models/city';
 })
 export class FavoriteComponent implements OnInit {
 
-  favorites: City[] = [];
+  ip: string;
+  favorites: Favorite[] = [];
 
   constructor(public weatherService: WeatherService,
     public favoriteService: FavoriteService) { }
 
   ngOnInit(): void {
-    this.favorites = this.favoriteService.getFavorites();
+    this.favoriteService.getIPAddress().subscribe((res: any) => {
+      this.ip = res.ip;
+      this.favoriteService.getFavorites(this.ip).subscribe(res => {
+        this.favorites = res;
+        this.favoriteService.favorites = res;
+      })
+    })
   }
 
   remove(favorite) {
-    this.favorites = this.favoriteService.removeFavorite(favorite);
+    this.favoriteService.removeFavorite(favorite).subscribe(res => {
+      this.favoriteService.removeLocal(favorite.id);
+    });
   }
 
 }

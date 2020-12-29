@@ -62,12 +62,38 @@
   <ItemGroup>
     <Compile Include="City.cs" />
     <Compile Include="Context.cs" />
+    <Compile Include="Favorite.cs" />
+    <Compile Include="Migrations\202012272120564_InitialCreate.cs" />
+    <Compile Include="Migrations\202012272120564_InitialCreate.designer.cs">
+      <DependentUpon>202012272120564_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012290808074_InitialCreate1.cs" />
+    <Compile Include="Migrations\202012290808074_InitialCreate1.designer.cs">
+      <DependentUpon>202012290808074_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012290823534_AddUser.cs" />
+    <Compile Include="Migrations\202012290823534_AddUser.designer.cs">
+      <DependentUpon>202012290823534_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Weather.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202012272120564_InitialCreate.resx">
+      <DependentUpon>202012272120564_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012290808074_InitialCreate1.resx">
+      <DependentUpon>202012290808074_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012290823534_AddUser.resx">
+      <DependentUpon>202012290823534_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

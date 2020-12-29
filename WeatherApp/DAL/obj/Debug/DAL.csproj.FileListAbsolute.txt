@@ -16,3 +16,7 @@ C:\Users\user\Documents\GitHub\Chaya-wachsstock-28-12-20-fullstack\WeatherApp\DA
 C:\Users\user\Documents\GitHub\Chaya-wachsstock-28-12-20-fullstack\WeatherApp\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\Chaya-wachsstock-28-12-20-fullstack\WeatherApp\DAL\obj\Debug\DAL.dll
 C:\Users\user\Documents\GitHub\Chaya-wachsstock-28-12-20-fullstack\WeatherApp\DAL\obj\Debug\DAL.pdb
+C:\Users\user\Documents\GitHub\Chaya-wachsstock-28-12-20-fullstack\WeatherApp\DAL\obj\Debug\DAL.Migrations.InitialCreate.resources
+C:\Users\user\Documents\GitHub\Chaya-wachsstock-28-12-20-fullstack\WeatherApp\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\Chaya-wachsstock-28-12-20-fullstack\WeatherApp\DAL\obj\Debug\DAL.Migrations.InitialCreate1.resources
+C:\Users\user\Documents\GitHub\Chaya-wachsstock-28-12-20-fullstack\WeatherApp\DAL\obj\Debug\DAL.Migrations.AddUser.resources
